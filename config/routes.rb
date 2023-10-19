@@ -8,4 +8,9 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
+  namespace :api, as: nil do
+    namespace :v1, as: nil do
+      get 'vehicles', to: 'vehicles#index'
+    end
+  end
 end
