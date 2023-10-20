@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     namespace :v1, as: nil do
       get 'vehicles', to: 'vehicles#index'
       resources :drivers, only: [:index]
+      resources :locations, only: [:create]
     end
   end
 end

@@ -17,6 +17,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_19_105307) do
     t.string "vehicle_type"
     t.string "phone"
     t.string "email"
+  end
+  
+  create_table "locations", force: :cascade do |t|
+    t.string "latitude"
+    t.string "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -37,6 +42,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_19_105307) do
   end
 
   create_table "vehicles", force: :cascade do |t|
+    t.integer "user_id", null: false
     t.string "vehicle_type"
     t.string "license_plate"
     t.string "color"
@@ -49,6 +55,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_19_105307) do
     t.text "details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_vehicles_on_user_id"
   end
 
+  add_foreign_key "vehicles", "users"
 end
