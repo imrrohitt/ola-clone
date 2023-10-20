@@ -44,3 +44,46 @@ vehicles_data = [
 vehicles_data.each do |vehicle_params|
   Vehicle.create!(vehicle_params)
 end
+
+
+drivers_data = [
+  {
+    name: 'John Doe',
+    license_number: '12345ABC',
+    vehicle_type: 'Sedan',
+    phone: '555-555-5555',
+    email: 'john.doe@example.com'
+  },
+  {
+    name: 'Jane Smith',
+    license_number: '6789XYZ',
+    vehicle_type: 'SUV',
+    phone: '555-555-5556',
+    email: 'jane.smith@example.com'
+  },
+  {
+    name: 'Alice Johnson',
+    license_number: 'ABCDEF12',
+    vehicle_type: 'Sedan',
+    phone: '555-555-5557',
+    email: 'alice.johnson@example.com'
+  },
+  {
+    name: 'Bob Brown',
+    license_number: 'XYZ12345',
+    vehicle_type: 'Truck',
+    phone: '555-555-5558',
+    email: 'bob.brown@example.com'
+  },
+  {
+    name: 'Eve Davis',
+    license_number: 'PQRS6789',
+    vehicle_type: 'SUV',
+    phone: '555-555-5559',
+    email: 'eve.davis@example.com'
+  }
+]
+
+drivers_data.each do |driver_params|
+  Driver.create!(driver_params)
+end
