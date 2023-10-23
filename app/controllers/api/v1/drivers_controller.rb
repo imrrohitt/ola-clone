@@ -6,4 +6,3 @@ class Api::V1::DriversController < ApplicationController
         render json: DriverSerializer.new(drivers).serializable_hash, status: :ok
     end
 end
-  

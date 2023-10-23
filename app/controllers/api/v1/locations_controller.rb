@@ -8,7 +8,6 @@ class Api::V1::LocationsController < ApplicationController
         render json: { errors: location.errors.full_messages }, status: :bad_request
       end
     end
-  
     private
   
     def location_params

@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get 'vehicles', to: 'vehicles#index'
       resources :drivers, only: [:index]
       resources :locations, only: [:create]
+      resources :rides, only: [:create]
     end
   end
 end

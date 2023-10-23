@@ -9,10 +9,6 @@
 
 # db/seeds.rb
 
-# Create and save five vehicle records
-
-# db/seeds/create_sample_vehicles.rb
-
 vehicles_data = [
   {
     vehicle_type: 'Sedan',
