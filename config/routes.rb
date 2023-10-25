@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       resources :drivers, only: [:index]
       resources :locations, only: [:create]
       resources :rides, only: [:create]
+      resources :payments, only: [:create]
     end
   end
 end
