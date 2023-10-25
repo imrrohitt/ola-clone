@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_23_043634) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_25_051818) do
   create_table "drivers", force: :cascade do |t|
     t.string "name"
     t.string "license_number"
@@ -24,6 +24,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_23_043634) do
   create_table "locations", force: :cascade do |t|
     t.string "latitude"
     t.string "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "total_amount"
+    t.string "status"
+    t.string "razorpay_order_id"
+    t.string "pickup_location"
+    t.string "dropoff_location"
+    t.datetime "pickup_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

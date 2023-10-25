@@ -15,7 +15,8 @@ gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 gem 'rails_admin', '~> 3.0'
 gem 'webpacker'
-
+gem "pry"
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
@@ -27,6 +28,9 @@ gem 'webpacker'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
+
+# payment
+gem 'razorpay'
 
 gem 'rack-cors'
 
