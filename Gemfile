@@ -34,6 +34,8 @@ gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'razorpay'
 
 gem 'rack-cors'
+gem 'httparty'
+gem "pry"
 
 #authentication 
 gem 'devise'

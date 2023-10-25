@@ -348,6 +348,7 @@ DEPENDENCIES
   devise
   devise-jwt
   dotenv-rails
+  httparty
   jsonapi-serializer
   pry
   puma (~> 5.0)
