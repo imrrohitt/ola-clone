@@ -15,6 +15,7 @@ gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 gem 'rails_admin', '~> 3.0'
 gem 'webpacker'
+gem "httparty"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
@@ -30,7 +31,7 @@ gem 'webpacker'
 
 gem 'rack-cors'
 
-#authentication 
+#authentication
 gem 'devise'
 gem 'devise-jwt'
 gem 'jsonapi-serializer'

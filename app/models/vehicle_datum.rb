@@ -1,0 +1,2 @@
+class VehicleDatum < ApplicationRecord
+end
