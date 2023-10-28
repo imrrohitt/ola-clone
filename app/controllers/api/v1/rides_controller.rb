@@ -5,12 +5,10 @@ class Api::V1::RidesController < ApplicationController
       rider = current_user
       driver = Driver.find(params[:driver_id])
   
-      if rider && driver
+      if rider && driver 
         # Find the associated vehicle for the driver, assuming the driver has an active vehicle
         vehicle_d = driver.vehicle_type
         vehicle = Vehicle.find_by(vehicle_type: vehicle_d)
-
-  
         if vehicle
           ride = Ride.create(rider: rider, driver: driver, vehicle: vehicle, status: 'requested')
           render json: RideSerializer.new(ride).serializable_hash
@@ -21,5 +19,5 @@ class Api::V1::RidesController < ApplicationController
         render json: { error: 'Unable to request ride. Please check your input.' }, status: :bad_request
       end
     end
-  end
+end
   

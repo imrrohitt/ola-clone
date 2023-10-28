@@ -1,2 +1,0 @@
-class VehicleDatum < ApplicationRecord
-end

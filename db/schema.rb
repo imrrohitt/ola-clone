@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_25_051818) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_28_015214) do
   create_table "drivers", force: :cascade do |t|
     t.string "name"
     t.string "license_number"
@@ -64,7 +64,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_25_051818) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  create_table "vehicle_data", force: :cascade do |t|
+  create_table "vehicle_details", force: :cascade do |t|
     t.string "title"
     t.string "subtitle"
     t.string "img_url"

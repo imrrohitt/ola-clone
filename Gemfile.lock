@@ -347,8 +347,8 @@ DEPENDENCIES
   debug
   devise
   devise-jwt
-  httparty
   dotenv-rails
+  httparty
   jsonapi-serializer
   pry
   puma (~> 5.0)

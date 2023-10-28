@@ -1,7 +1,7 @@
-class CreateVehicleData < ActiveRecord::Migration[7.0]
+class CreateVehicleDetails < ActiveRecord::Migration[7.0]
   def change
-    create_table :vehicle_data do |t|
-
+    create_table :vehicle_details do |t|
+      
       t.string :title
       t.string :subtitle
       t.string :img_url

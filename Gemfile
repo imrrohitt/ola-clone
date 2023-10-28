@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 gem 'rexml'
-gem 'dotenv-rails', require: 'dotenv/rails-now'
+# gem 'dotenv-rails', require: 'dotenv/rails-now'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
@@ -16,9 +16,9 @@ gem "sqlite3", "~> 1.4"
 gem "puma", "~> 5.0"
 gem 'rails_admin', '~> 3.0'
 gem 'webpacker'
-gem "httparty"
+# gem "httparty"
 
-gem "pry"
+# gem "pry"
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
@@ -36,6 +36,8 @@ gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'razorpay'
 
 gem 'rack-cors'
+gem 'httparty'
+gem "pry"
 
 #authentication
 gem 'devise'
