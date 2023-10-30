@@ -17,7 +17,7 @@ gem "puma", "~> 5.0"
 gem 'rails_admin', '~> 3.0'
 gem 'webpacker'
 gem "pry"
-gem 'dotenv-rails', require: 'dotenv/rails-now'
+# gem 'dotenv-rails', require: 'dotenv/rails-now'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
